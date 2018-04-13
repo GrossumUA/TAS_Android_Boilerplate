@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--messages-->
+    <string name="err_something_going_wrong">Something went wrong, please try again later</string>
+    <string name="err_no_internet_connection">No active internet connection found. Please, check internet connectivity and try again.</string>
+
+</resources>

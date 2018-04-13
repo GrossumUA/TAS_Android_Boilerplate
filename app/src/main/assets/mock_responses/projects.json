@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1",
+    "name": "Student Share",
+    "type": "Education",
+    "logoSrc": "project_logos/student_share.png"
+  },
+  {
+    "id": "2",
+    "name": "Koleston",
+    "type": "Beauty",
+    "logoSrc": "project_logos/koleston.png"
+  },
+  {
+    "id": "3",
+    "name": "Nioxin",
+    "type": "Beauty",
+    "logoSrc": "project_logos/nioxin.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Fraud Finder",
+    "type": "Tools",
+    "logoSrc": "project_logos/fraud_finder.png"
+  },
+  {
+    "id": "5",
+    "name": "Transpro",
+    "type": "Logistic",
+    "logoSrc": "project_logos/transpro.png"
+  },
+  {
+    "id": "6",
+    "name": "Heavy Hall Route",
+    "type": "Logistic",
+    "logoSrc": "project_logos/heavy_hall_route.png"
+  },
+  {
+    "id": "7",
+    "name": "Handies",
+    "type": "P2P Services",
+    "logoSrc": "project_logos/handies.png"
+  },
+  {
+    "id": "8",
+    "name": "Leroy Merlin",
+    "type": "Tools",
+    "logoSrc": "project_logos/leroy_merlin.png"
+  },
+  {
+    "id": "9",
+    "name": "Defietser",
+    "type": "P2P Services",
+    "logoSrc": "project_logos/defietser.png"
+  }
+]
+
+

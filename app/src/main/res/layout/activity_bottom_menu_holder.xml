@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/bm_holder"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bt_menu_height"
+        android:background="@color/bottom_menu_color_white"
+        android:elevation="@dimen/bt_menu_elevation"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.theappsolutions.boilerplate._additional_useful_classes.custom_views.bottom_menu.BottomMenuLayout
+            android:id="@+id/bottom_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true">
+
+        </com.theappsolutions.boilerplate._additional_useful_classes.custom_views.bottom_menu.BottomMenuLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/bm_holder"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/bm_holder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.theappsolutions.boilerplate.custom_views.CustomToolbar xmlns:custom_toolbar="http://schemas.android.com/apk/res-auto"
+            style="@style/ToolbarStyle"
+            custom_toolbar:withBackBtn="true" />
+
+        <FrameLayout
+            android:id="@+id/fl_holder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,229 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+apply from: '../config/quality/quality.gradle'
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+        applicationId 'com.theappsolutions.boilerplate'
+        minSdkVersion 21
+        targetSdkVersion 27
+        testInstrumentationRunner "${applicationId}.runner.RxAndroidJUnitRunner"
+
+        versionCode 1000
+        // Major -> Millions, Minor -> Thousands, Bugfix -> Hundreds. E.g 1.3.72 == 1,003,072
+        versionName '0.9.0'
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath false
+            }
+        }
+        multiDexEnabled true
+
+        // for naming of .apk file
+        archivesBaseName = "TASBoilerplate_$versionName"
+    }
+
+    signingConfigs {
+        // You must set up an environment var before release signing
+        // Run: export APP_KEY={password}
+        // TODO Add your release keystore in /keystore folder
+        release {
+            //
+            // storeFile file('keystore/release.keystore')
+            keyAlias 'alias'
+            storePassword "$System.env.APP_KEY"
+            keyPassword "$System.env.APP_KEY"
+        }
+
+        debug {
+            // storeFile file('keystore/debug.keystore')
+            keyAlias 'androiddebugkey'
+            storePassword 'android'
+            keyPassword 'android'
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            ext.betaDistributionReleaseNotesFilePath =
+                    file('../crashlytics_release_notes.txt').absolutePath
+        }
+
+        debug {
+            // apply this suffix if you need specific package name for build.
+            applicationIdSuffix ".debug"
+
+            versionNameSuffix " Debug"
+            debuggable true
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        def commonTestDir = 'src/commonTest/java'
+        test {
+            java.srcDir commonTestDir
+        }
+        androidTest {
+            java.srcDir commonTestDir
+        }
+    }
+
+    //Needed because of this https://github.com/square/okio/issues/58
+    lintOptions {
+        warning 'InvalidPackage'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+ext {
+    SUPPORT_LIBRARY_VERSION = '27.1.0'
+    FIREBASE_VERSION = '12.0.0'
+    RETROFIT_VERSION = '2.3.0'
+    DAGGER_VERSION = '2.5'
+    MOCKITO_VERSION = '2.6.2'
+    ESPRESSO_VERSION = '2.2.1'
+    RUNNER_VERSION = '0.4'
+    BUTTERKNIFE_VERSION = '8.8.1'
+    AUTO_VALUE_VERSION = '1.3'
+    AUTO_VALUE_GSON_VERSION = '0.4.2'
+    STREAM_BACKPORT_VERSION = '1.1.7'
+    LEAK_CANARY_VERSION = '1.5.4'
+    STETHO_VERSION = '1.5.0'
+    JAVA_TUPLES_VERSION = '1.2'
+    OK_HTTP_3_VERSION = '3.9.0'
+    ROBOLECTRIC_VERSION = '3.5'
+    TIMBER_VERSION = '4.6.0'
+    JAVAX_ANNOTATION_VERSION = '10.0-b28'
+    GLIDE_VERSION = '4.4.0'
+    RX_ANDROID_VERSION = '2.0.1'
+    RX_JAVA_VERSION = '2.1.3'
+    CRASHLYTICS_VERSION = '2.9.1'
+    JUNIT_VERSION = '4.12'
+    AUTO_VALUE_PARCEL_VERSION = '0.2.4-rc2'
+    CONSTRAINT_LAYOUT_VERSION = '1.0.2'
+    DESIGN_LIBRARY_VERSION = '26.1.0'
+    RX_BINDING = '2.0.0'
+    MULTI_DEX_VERSION = '1.0.3'
+    FIREBASE_JOB_DISPATCHER = '0.8.5'
+    REALM_ADAPTERS = '2.1.1'
+    CHANGE_LOG_LIBRARY = '2.1.0'
+}
+
+dependencies {
+    //common
+    implementation "com.android.support:multidex:$MULTI_DEX_VERSION"
+
+    //android
+    // App Dependencies
+    implementation "com.android.support:support-v4:$SUPPORT_LIBRARY_VERSION"
+    implementation "com.android.support:appcompat-v7:$SUPPORT_LIBRARY_VERSION"
+    implementation "com.android.support:design:$SUPPORT_LIBRARY_VERSION"
+    implementation "com.android.support:recyclerview-v7:$SUPPORT_LIBRARY_VERSION"
+    implementation "com.android.support:cardview-v7:$SUPPORT_LIBRARY_VERSION"
+    implementation "com.android.support:support-annotations:$SUPPORT_LIBRARY_VERSION"
+    implementation "com.android.support:preference-v7:$SUPPORT_LIBRARY_VERSION"
+
+    implementation "com.squareup.retrofit2:retrofit:$RETROFIT_VERSION"
+    implementation "com.squareup.retrofit2:converter-gson:$RETROFIT_VERSION"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$RETROFIT_VERSION"
+
+    implementation("com.github.bumptech.glide:glide:$GLIDE_VERSION")
+    annotationProcessor "com.github.bumptech.glide:compiler:$GLIDE_VERSION"
+
+    implementation "io.reactivex.rxjava2:rxandroid:$RX_ANDROID_VERSION"
+    implementation "io.reactivex.rxjava2:rxjava:$RX_JAVA_VERSION"
+    implementation("com.crashlytics.sdk.android:crashlytics:$CRASHLYTICS_VERSION@aar") {
+        transitive = true
+    }
+    implementation "com.google.firebase:firebase-core:$FIREBASE_VERSION"
+
+    implementation "com.jakewharton.timber:timber:$TIMBER_VERSION"
+    implementation "com.jakewharton:butterknife:$BUTTERKNIFE_VERSION"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$BUTTERKNIFE_VERSION"
+
+    implementation "com.google.dagger:dagger:$DAGGER_VERSION"
+    compileOnly "org.glassfish:javax.annotation:$JAVAX_ANNOTATION_VERSION" //Required by Dagger2
+
+    def daggerCompiler = "com.google.dagger:dagger-compiler:$DAGGER_VERSION"
+    annotationProcessor daggerCompiler
+    testAnnotationProcessor daggerCompiler
+    androidTestAnnotationProcessor daggerCompiler
+
+    // leak canary
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:$LEAK_CANARY_VERSION"
+    releaseImplementation "com.squareup.leakcanary:leakcanary-android-no-op:$LEAK_CANARY_VERSION"
+
+    implementation "com.facebook.stetho:stetho:$STETHO_VERSION"
+    implementation "com.facebook.stetho:stetho-okhttp:$STETHO_VERSION"
+
+    implementation "com.squareup.okhttp3:okhttp:$OK_HTTP_3_VERSION"
+    implementation "com.squareup.okhttp3:logging-interceptor:$OK_HTTP_3_VERSION"
+    implementation "com.squareup.okhttp3:okhttp-urlconnection:$OK_HTTP_3_VERSION"
+
+    implementation "com.annimon:stream:$STREAM_BACKPORT_VERSION"
+    implementation "org.javatuples:javatuples:$JAVA_TUPLES_VERSION"
+
+    implementation "com.android.support.constraint:constraint-layout:$CONSTRAINT_LAYOUT_VERSION"
+
+    implementation "com.android.support:design:$DESIGN_LIBRARY_VERSION"
+    implementation "com.jakewharton.rxbinding2:rxbinding:$RX_BINDING"
+
+    implementation "io.realm:android-adapters:$REALM_ADAPTERS"
+
+    implementation "com.github.gabrielemariotti.changeloglib:changelog:$CHANGE_LOG_LIBRARY"
+
+
+
+    // Instrumentation test dependencies
+    def jUnit = "junit:junit:$JUNIT_VERSION"
+    def mockito = "org.mockito:mockito-core:$MOCKITO_VERSION"
+
+    androidTestImplementation jUnit
+    androidTestImplementation mockito
+    androidTestImplementation "org.mockito:mockito-android:$MOCKITO_VERSION"
+    androidTestImplementation "com.android.support:support-annotations:$SUPPORT_LIBRARY_VERSION"
+    androidTestImplementation("com.android.support.test.espresso:espresso-contrib:$ESPRESSO_VERSION") {
+        exclude group: 'com.android.support', module: 'appcompat'
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'com.android.support', module: 'recyclerview-v7'
+    }
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:$ESPRESSO_VERSION"
+    androidTestImplementation "com.android.support.test:runner:$RUNNER_VERSION"
+    androidTestImplementation "com.android.support.test:rules:$RUNNER_VERSION"
+
+    // Unit tests dependencies
+    testImplementation jUnit
+    testImplementation mockito
+    testImplementation "org.robolectric:robolectric:$ROBOLECTRIC_VERSION"
+}
+apply plugin: 'com.google.gms.google-services'
+
+
+// Log out test results to console
+tasks.matching { it instanceof Test }.all {
+    testLogging.events = ["failed", "passed", "skipped"]
+}
+
+android.applicationVariants.all {
+    def aptOutputDir = new File(buildDir, "generated/source/apt/${it.unitTestVariant.dirName}")
+    it.unitTestVariant.addJavaSourceFoldersToModel(aptOutputDir)
+}

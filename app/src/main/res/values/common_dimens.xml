@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_padding_xsmall_2dp">2dp</dimen>
+    <dimen name="common_padding_small_4dp">4dp</dimen>
+    <dimen name="common_padding_sm_6dp">6dp</dimen>
+    <dimen name="common_padding_medium_8dp">8dp</dimen>
+    <dimen name="common_padding_ml_10dp">10dp</dimen>
+    <dimen name="common_padding_large_12dp">12dp</dimen>
+    <dimen name="common_padding_xlarge_16dp">16dp</dimen>
+    <dimen name="common_padding_xxlarge_24dp">24dp</dimen>
+    <dimen name="common_padding_xxxlarge_32dp">32dp</dimen>
+    <dimen name="common_padding_mega_48dp">48dp</dimen>
+    <dimen name="common_padding_xmega_72dp">72dp</dimen>
+    <dimen name="common_padding_xxmega_96dp">96dp</dimen>
+    <dimen name="common_padding_xxxmega_142dp">146dp</dimen>
+
+    <dimen name="finger_size_half">24dp</dimen>
+    <dimen name="finger_size">48dp</dimen>
+
+    <dimen name="text_xxsmall_10sp">10sp</dimen>
+    <dimen name="text_xsmall_12sp">12sp</dimen>
+    <dimen name="text_small_14sp">14sp</dimen>
+    <dimen name="text_sm_15sp">15sp</dimen>
+    <dimen name="text_medium_16sp">16sp</dimen>
+    <dimen name="text_ml_18sp">18sp</dimen>
+    <dimen name="text_large_20sp">20sp</dimen>
+    <dimen name="text_xlarge_24sp">24sp</dimen>
+</resources>

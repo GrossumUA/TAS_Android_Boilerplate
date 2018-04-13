@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "975502532454",
+    "firebase_url": "https://tasandroidboilerplate.firebaseio.com",
+    "project_id": "tasandroidboilerplate",
+    "storage_bucket": "tasandroidboilerplate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975502532454:android:487bf56b1c6d7330",
+        "android_client_info": {
+          "package_name": "com.theappsolutions.boilerplate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "975502532454-ktaa00jogtcp1vf02s0tcf8rv44skr6p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrdo4wpPGeuL0gKNFBeCT-YzShsLbddl0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975502532454:android:0ed51ebcbdef9f7a",
+        "android_client_info": {
+          "package_name": "com.theappsolutions.boilerplate.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "975502532454-ktaa00jogtcp1vf02s0tcf8rv44skr6p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrdo4wpPGeuL0gKNFBeCT-YzShsLbddl0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

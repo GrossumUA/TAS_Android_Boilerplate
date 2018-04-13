@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">TAS Android Boilerplate</string>
+
+    <!--dialogs-->
+    <string name="dialog_action_ok">OK</string>
+    <string name="dialog_error_title">Sorry</string>
+    <string name="dialog_progress_msg">Please, wait…</string>
+
+    <!--common-->
+    <string name="error_empty_field">Field cannot be empty</string>
+    <string name="error_short_pass">Password should be longer than %d</string>
+    <string name="error_pass_should_contains_letter_and_digits">Password should contains letter and digits</string>
+    <string name="error_pass_should_contains_uppercase">Password should contains uppercase letter</string>
+    <string name="error_email_did_not_matches">Email did not matches pattern</string>
+    <string name="common_empty_view_text">No items</string>
+
+    <!--settings_main-->
+    <string name="settings_screen__pref_description">Auto Login mode is ON. User will be logined automatically if he previously did it</string>
+    <string name="settings_screen__autologin">Auto Login</string>
+    <string name="settings_screen__account_category">Account</string>
+    <string name="settings_screen__logout_btn">Logout</string>
+    <string name="settings_screen__toolbar_title">Settings</string>
+
+    <!--login-->
+    <string name="login_screen__btn_caption">Log in</string>
+    <string name="login_screen__password_hint">Input password</string>
+    <string name="login_screen__hint_login">Input username</string>
+
+    <!--changelog-->
+    <string name="change_log_title">Changelog</string>
+    <string name="change_log_confirm_button">Ok</string>
+</resources>

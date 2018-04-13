@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory>
+
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="@string/id_pref_switcher"
+            android:title="@string/settings_screen__autologin" />
+
+        <Preference
+            android:dependency="@string/id_pref_switcher"
+            android:key="@string/id_pref_switch_caption"
+            android:layout="?android:attr/preferenceLayoutChild"
+            android:selectable="false"
+            android:summary="@string/settings_screen__pref_description" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/settings_screen__account_category">
+
+        <Preference
+            android:key="@string/id_pref_logout"
+            android:title="@string/settings_screen__logout_btn" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

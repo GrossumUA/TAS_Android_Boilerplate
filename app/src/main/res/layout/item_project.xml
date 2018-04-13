@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/common_padding_small_4dp"
+    android:layout_marginEnd="@dimen/common_padding_medium_8dp"
+    android:layout_marginStart="@dimen/common_padding_medium_8dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/finger_size"
+        android:layout_marginBottom="@dimen/common_padding_medium_8dp"
+        android:layout_marginLeft="@dimen/common_padding_large_12dp"
+        android:layout_marginRight="@dimen/common_padding_large_12dp"
+        android:layout_marginTop="@dimen/common_padding_medium_8dp">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="@dimen/finger_size"
+            android:layout_height="@dimen/finger_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/common_padding_large_12dp"
+            android:textSize="@dimen/text_ml_18sp"
+            app:layout_constraintStart_toEndOf="@+id/iv_logo"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Student Share" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/text_small_14sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name"
+            tools:text="Education" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

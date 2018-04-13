@@ -1,0 +1,43 @@
+package com.theappsolutions.boilerplate.data.data_sources.remote;
+
+import com.theappsolutions.boilerplate.data.PreferencesManager;
+import com.theappsolutions.boilerplate.data.model.api.LoginResponse;
+import com.theappsolutions.boilerplate.data.model.api.ProjectsResponse;
+import com.theappsolutions.boilerplate.util.other_utils.ApiUtils;
+
+import java.util.List;
+
+import javax.inject.Inject;
+import javax.inject.Singleton;
+
+import io.reactivex.Observable;
+
+
+/**
+ * @author Dmytro Yakovlev d.yakovlev@theappsolutions.com
+ * @copyright (c) 2017 TheAppSolutions. (https://theappsolutions.com)
+ */
+@Singleton
+public class RestApiClient {
+
+    private final ApiUtils apiUtils;
+    private RestService restService;
+    private PreferencesManager prefHelper;
+
+    @Inject
+    public RestApiClient(RestService restService,
+                         ApiUtils apiUtils,
+                         PreferencesManager prefHelper) {
+        this.apiUtils = apiUtils;
+        this.restService = restService;
+        this.prefHelper = prefHelper;
+    }
+
+    public Observable<LoginResponse> login(String username, String password) {
+        return restService.login(username, password).compose(apiUtils::decorate);
+    }
+
+    public Observable<List<ProjectsResponse>> getProjects() {
+        return restService.getProjects().compose(apiUtils::decorate);
+    }
+}

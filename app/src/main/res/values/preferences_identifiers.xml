@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="id_pref_logout">pref_btn_logout</string>
+    <string name="id_pref_switch_caption">pref_static_field_key</string>
+    <string name="id_pref_switcher">switch_preference</string>
+
+</resources>

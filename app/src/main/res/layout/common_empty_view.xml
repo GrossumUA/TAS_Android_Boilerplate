@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.theappsolutions.boilerplate.custom_views.CustomFontTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tv_empty_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:text="@string/common_empty_view_text"
+    android:textSize="@dimen/text_medium_16sp"
+    app:customFontName="ClanOT_NarrBold" />
+
+        

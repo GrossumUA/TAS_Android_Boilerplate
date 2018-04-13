@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#f7f7f7</color>
+    <color name="primary_dark">#f7f7f7</color>
+    <color name="accent">#c7013c</color>
+
+    <color name="main_bg_color">#ffffff</color>
+    <color name="status_bar_color_for_pre_23ver">#89898c</color>
+
+    <!--text colors-->
+    <color name="text_color_black">#000000</color>
+    <color name="text_color_grey_medium">#4d4d4d</color>
+
+    <!--view colors-->
+    <color name="bottom_menu_color_white">@color/primary</color>
+    <color name="bottom_menu_text_color_inactive">#666666</color>
+    <color name="bottom_menu_text_color_active">#C8003C</color>
+    <color name="shape_border_inactive">#dee0e2</color>
+
+</resources>

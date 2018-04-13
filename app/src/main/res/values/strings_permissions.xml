@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--permissions-->
+    <string name="msg_no_permissions">Please, grant permissions in settings before start. Make sure that GPS is enabled</string>
+    <string name="msg_permissions_enabling">Please, enable needed permissions for proceeding of work</string>
+    <string name="msg_permit_drawing">Please, permit drawing over other apps</string>
+
+</resources>

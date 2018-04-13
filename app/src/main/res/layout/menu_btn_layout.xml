@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/selectableItemBackground"
+    android:minWidth="@dimen/bt_menu_item_min_width"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/bt_menu_item_padding_side"
+    android:paddingStart="@dimen/bt_menu_item_padding_side">
+
+    <ImageView
+        android:id="@+id/iv_progress"
+        android:layout_width="@dimen/bt_menu_icon_size"
+        android:layout_height="@dimen/bt_menu_icon_size"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/bt_menu_icon_margin_top_inactive"
+        android:gravity="center"
+        android:visibility="visible"
+        tools:ignore="ContentDescription" />
+
+    <com.theappsolutions.boilerplate.custom_views.CustomFontTextView
+        android:id="@+id/tv_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/bt_menu_text_bottom_margin"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textColor="@color/bottom_menu_text_color_inactive"
+        android:textSize="@dimen/bt_menu_text_size_inactive"
+        app:customFontName="ClanOT_NarrBook"
+        tools:text="Master KP" />
+
+</RelativeLayout>

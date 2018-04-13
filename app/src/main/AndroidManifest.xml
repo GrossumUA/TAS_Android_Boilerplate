@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.theappsolutions.boilerplate">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name=" android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name=" android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.theappsolutions.boilerplate.TasBoilerplateApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.auth.AuthActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.settings.SettingsActivity" />
+        <activity android:name=".ui.projects.ProjectListActivity" />
+
+
+        <!--TODO uncomment for BottomMenu functionality-->
+        <!--<activity android:name="com.theappsolutions.boilerplate._additional_useful_classes.ui.menu.BottomMenuActivity" />-->
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="c603e3328708452006a9d0a919e058194a29f59f" />
+    </application>
+
+</manifest>

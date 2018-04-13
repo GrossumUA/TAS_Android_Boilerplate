@@ -1,0 +1,17 @@
+1) ChangeLogs based on library
+https://github.com/gabrielemariotti/changeloglib
+
+2) How it works
+* content of change log is described in file res/raw/changelog.xml
+
+a) If you want to add bold text, use next
+<changelogtext>[b]This is bold text[/b] Normal text.</changelogtext>
+
+b) Add link.
+<changelogimprovement><![CDATA[Text before link <a href="http://www.google.it">manual</a> and after link]]></changelogimprovement>
+
+c) italic text:
+<changelogtext>Normal text [i]italic text[/i]</changelogtext>
+
+d) about bug
+<changelogbug>Fixed a [a href="http://www.google.it"]number[/a] of bugs with the Gmail and SMS extensions</changelogbug>
