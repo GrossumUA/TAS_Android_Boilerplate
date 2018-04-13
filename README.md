@@ -2,7 +2,8 @@
 <p align="center">
   <img src="/resources/img_tas_logo.png?raw=true">
 </p>
-Sample Android app that [The App Solutions](https://theappsolutions.com/)'es developers used as a reference for new Android projects. It shows the architecture and guidelines of most company's projects and provides base utils that can be used for many common tasks.
+
+Sample Android app that [The App Solutions](https://theappsolutions.com/) company developers used as a reference for new Android projects. It shows the architecture and guidelines of most company's projects and provides base utils that can be used for many common tasks.
 
 Tech stack:
 
