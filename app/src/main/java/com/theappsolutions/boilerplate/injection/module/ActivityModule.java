@@ -8,6 +8,10 @@ import com.theappsolutions.boilerplate.injection.ActivityContext;
 import dagger.Module;
 import dagger.Provides;
 
+/**
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
+ */
 @Module
 public class ActivityModule {
 

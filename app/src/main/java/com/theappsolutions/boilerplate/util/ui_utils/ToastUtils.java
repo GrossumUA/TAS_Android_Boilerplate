@@ -7,6 +7,10 @@ import android.widget.Toast;
 import java.util.Iterator;
 import java.util.Set;
 
+/**
+ * @author Dmytro Yakovlev d.yakovlev@theappsolutions.com
+ * @copyright (c) 2017 TheAppSolutions. (https://theappsolutions.com)
+ */
 public class ToastUtils {
 
     public static void useLongToast(Context context, String message) {

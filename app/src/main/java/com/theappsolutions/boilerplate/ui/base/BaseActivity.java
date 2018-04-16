@@ -33,6 +33,9 @@ import butterknife.ButterKnife;
 import timber.log.Timber;
 
 /**
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
+ * <p>
  * Abstract activity that every other Activity in this application must implement. It handles
  * creation of Dagger components and makes sure that instances of ConfigPersistentComponent survive
  * across configuration changes.

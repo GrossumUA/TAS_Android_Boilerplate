@@ -3,8 +3,8 @@ package com.theappsolutions.boilerplate.data.model.common;
 import static com.annimon.stream.Optional.ofNullable;
 
 /**
- * @author Yevhen Nechyporenko <nechiporenko.evgeniy@gmail.com>
- * @copyright (c) Grossum. (http://www.grossum.com)
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
  */
 public class ApiErrorResult {
 

@@ -10,6 +10,10 @@ import com.theappsolutions.boilerplate.ui.projects.ProjectListActivity;
 
 import javax.inject.Inject;
 
+/**
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
+ */
 public class SplashActivity extends BaseMvpActivity implements SplashView {
 
     @Inject

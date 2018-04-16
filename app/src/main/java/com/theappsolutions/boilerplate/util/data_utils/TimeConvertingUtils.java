@@ -5,7 +5,8 @@ import java.util.Date;
 import java.util.Locale;
 
 /**
- * Created by Dmytro Yakovlev.
+ * @author Dmytro Yakovlev d.yakovlev@theappsolutions.com
+ * @copyright (c) 2017 TheAppSolutions. (https://theappsolutions.com)
  */
 public class TimeConvertingUtils {
 

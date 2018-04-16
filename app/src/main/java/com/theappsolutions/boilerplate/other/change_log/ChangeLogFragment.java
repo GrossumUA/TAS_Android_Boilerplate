@@ -12,6 +12,12 @@ import com.theappsolutions.boilerplate.R;
 
 import it.gmariotti.changelibs.library.view.ChangeLogRecyclerView;
 
+/**
+ * @author Dmytro Yakovlev d.yakovlev@theappsolutions.com
+ * @copyright (c) 2017 TheAppSolutions. (https://theappsolutions.com)
+ *
+ * Fragment for ChangeLog view
+ */
 public class ChangeLogFragment extends DialogFragment {
 
     @Override

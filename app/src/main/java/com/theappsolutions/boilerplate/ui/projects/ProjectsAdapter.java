@@ -18,6 +18,10 @@ import butterknife.ButterKnife;
 import io.realm.OrderedRealmCollection;
 import io.realm.RealmRecyclerViewAdapter;
 
+/**
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
+ */
 public class ProjectsAdapter extends RealmRecyclerViewAdapter<CachedProject, ProjectsAdapter.ViewHolder> {
 
     public static class ViewHolder extends RecyclerView.ViewHolder {

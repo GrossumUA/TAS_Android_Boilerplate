@@ -9,6 +9,10 @@ import com.theappsolutions.boilerplate.injection.ApplicationContext;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
+/**
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
+ */
 @Singleton
 public class PreferencesManager {
 

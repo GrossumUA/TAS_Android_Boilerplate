@@ -8,7 +8,7 @@ import com.theappsolutions.boilerplate.data.PreferencesManager;
 import com.theappsolutions.boilerplate.injection.ApplicationContext;
 import com.theappsolutions.boilerplate.other.api.MockingInterceptor;
 import com.theappsolutions.boilerplate.other.api.RequestsHandler;
-import com.theappsolutions.boilerplate.util.other_utils.NetworkUtil;
+import com.theappsolutions.boilerplate.util.other_utils.NetworkUtils;
 
 import java.io.IOException;
 import java.util.Map;
@@ -22,13 +22,12 @@ import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-import static com.theappsolutions.boilerplate.util.other_utils.NetworkUtil.isNetworkConnected;
+import static com.theappsolutions.boilerplate.util.other_utils.NetworkUtils.isNetworkConnected;
 
 /**
  * @author Dmytro Yakovlev d.yakovlev@theappsolutions.com
  * @copyright (c) 2017 TheAppSolutions. (https://theappsolutions.com)
  */
-
 public class RetrofitBuilder {
 
     public final static String AUTHORIZATION_KEY = "Authorization";
@@ -98,7 +97,7 @@ public class RetrofitBuilder {
         @Override
         public Response intercept(Chain chain) throws IOException {
             if (!isNetworkConnected(appContext)) {
-                throw NetworkUtil.noConnectionException(appContext);
+                throw NetworkUtils.noConnectionException(appContext);
             }
             return chain.proceed(chain.request());
         }

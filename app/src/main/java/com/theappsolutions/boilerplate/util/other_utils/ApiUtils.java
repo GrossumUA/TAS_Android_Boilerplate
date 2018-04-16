@@ -19,6 +19,8 @@ import retrofit2.adapter.rxjava2.Result;
 /**
  * @author Severyn Parkhomenko <sparkhomenko@grossum.com>
  * @copyright (c) Grossum. (http://www.grossum.com)
+ *
+ * Set of methods that wrap main transformations and checking while working with REST API
  */
 public class ApiUtils {
 

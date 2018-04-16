@@ -1,4 +1,4 @@
-package com.theappsolutions.boilerplate.util.storage_utils.db_importing;
+package com.theappsolutions.boilerplate.util.storage_utils;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -21,7 +21,10 @@ import io.realm.RealmModel;
 import timber.log.Timber;
 
 /**
- * From json to realm database
+ * @author Dmytro Yakovlev d.yakovlev@theappsolutions.com
+ * @copyright (c) 2017 TheAppSolutions. (https://theappsolutions.com)
+ *
+ * Manger that provides importing Realm database from json
  */
 public class RealmImporter {
 

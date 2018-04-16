@@ -5,6 +5,10 @@ import com.theappsolutions.boilerplate.data.model.api.ProjectsResponse;
 import io.realm.RealmObject;
 import io.realm.annotations.PrimaryKey;
 
+/**
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
+ */
 public class CachedProject extends RealmObject {
 
     @PrimaryKey

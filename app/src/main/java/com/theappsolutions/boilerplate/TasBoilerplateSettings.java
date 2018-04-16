@@ -2,6 +2,10 @@ package com.theappsolutions.boilerplate;
 
 import android.Manifest;
 
+/**
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
+ */
 public class TasBoilerplateSettings {
 
     public static final String API = "https://dev.test.org/";

@@ -1,8 +1,7 @@
 package com.theappsolutions.boilerplate.other.exceptions;
-
 /**
- * @author Yevhen Nechyporenko <nechiporenko.evgeniy@gmail.com>
- * @copyright (c) Grossum. (http://www.grossum.com)
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
  */
 public class UserReadableException extends RuntimeException {
     public UserReadableException() {

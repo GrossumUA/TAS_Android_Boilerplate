@@ -5,7 +5,7 @@
 
 Sample Android app that [The App Solutions](https://theappsolutions.com/) company developers used as a reference for new Android projects. It shows the architecture and guidelines of most company's projects and provides base utils that can be used for many common tasks.
 
-Tech stack:
+## Tech stack
 
 - Android Support libraries
 - [RxJava 2](https://github.com/ReactiveX/RxJava) and [RxAndroid](https://github.com/ReactiveX/RxAndroid)
@@ -29,6 +29,7 @@ Tech stack:
 - Memory leak detection with [Leakcanary](https://github.com/square/leakcanary)
 - [Stetho](https://github.com/facebook/stetho) debug bridge
 - [Checkstyle](http://checkstyle.sourceforge.net/), [PMD](https://pmd.github.io/) and [Findbugs](http://findbugs.sourceforge.net/) for code analysis
+- Set of Utils
 
 ## Requirements
 
@@ -43,6 +44,48 @@ Tech stack:
 This project follows TAS's Android architecture guidelines that are based on [MVP (Model View Presenter)](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter). For data layer used [Repository Design Pattern](https://www.messenger.com/t/100005362788474) with Reactive ([RxJava](https://github.com/ReactiveX/RxJava)) callbacks. Presenters, Managers and some Utils provided by Dependency Injection ([Dagger 2](http://google.github.io/dagger/))
 
 ![Architecture Diagram](resources/diagram_1.png)
+
+## Utils
+
+This project contains wide list of different utils that help to solve a lot of common task.
+
+### Data
+
+- **ValidationUtils** - util that provides validation of different fields. Can be used as instance with predefined rules and messages.
+- **TimeConvertingUtils**
+- **StringUtils** 
+- **RoundingHelper** 
+- **RandomUtils** 
+- **CountryCodeUtils** - utils for country codes processing 
+- **OccurrencesIndexFinder** - util for finding start/end indexes of phrase in text
+
+### Storage
+
+- **FileSystemHelper** - utils for working with files
+- **RealmImporter** - manger that provides importing Realm database from json
+- **RealmUtils** - base Realm operations wrapper
+
+### UI
+
+- **DialogFactory** - provides simple access to base Android workflow dialogs
+- **FragmentUtils**
+- **ToastUtils**
+- **ViewUtils** - Set of static methods with common view operations and calculations
+
+### Other
+
+- **StreamsUtils**
+- **RxUtils**
+- **OptUtils** - provides sets of methods that help to manipulate with Optional
+- **NetworkUtils**
+- **LogUtils**
+- **IntentUtils**
+- **HardwareUtils**
+- **BuildInfoUtils**
+- **ApiUtils** - set of methods that wrap main transformations and checking while working with REST API
+- **GaidRetriever** - provide access to Google Advertising ID
+- **PermissionsCheckActivity** - base activity for screens with permission checking
+- **PermissionsUtils**
 
 ## Code Quality
 

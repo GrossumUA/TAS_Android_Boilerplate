@@ -7,6 +7,9 @@ import com.theappsolutions.boilerplate.ui.base.BaseActivity;
 import dagger.Component;
 
 /**
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
+ * <p>
  * A dagger component that will live during the lifecycle of an Activity but it won't
  * be destroy during configuration changes. Check {@link BaseActivity} to see how this components
  * survives configuration changes.

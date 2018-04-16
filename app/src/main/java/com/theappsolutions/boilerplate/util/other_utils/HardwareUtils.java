@@ -10,7 +10,8 @@ import com.theappsolutions.boilerplate.util.data_utils.StringUtils;
 import java.util.UUID;
 
 /**
- * Created by Dmytro Yakovlev.
+ * @author Dmytro Yakovlev d.yakovlev@theappsolutions.com
+ * @copyright (c) 2017 TheAppSolutions. (https://theappsolutions.com)
  */
 public class HardwareUtils {
 

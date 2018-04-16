@@ -12,6 +12,7 @@ import android.support.v4.app.ActivityCompat;
 
 import com.theappsolutions.boilerplate.R;
 import com.theappsolutions.boilerplate.ui.base.BaseMvpActivity;
+import com.theappsolutions.boilerplate.util.data_utils.index_search.OccurrencesIndexFinder;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,11 +21,12 @@ import timber.log.Timber;
 
 import static com.theappsolutions.boilerplate.TasBoilerplateSettings.NECESSARY_PERMISSIONS;
 
-
 /**
- * Created by Dmytro Yakovlev.
+ * @author Dmytro Yakovlev d.yakovlev@theappsolutions.com
+ * @copyright (c) 2017 TheAppSolutions. (https://theappsolutions.com)
+ *
+ * Base activity for screens with permission checking
  */
-
 public abstract class PermissionsCheckActivity extends BaseMvpActivity {
 
     public static final String SUPPRESS_PERMISSIONS = "suppress_permissions";

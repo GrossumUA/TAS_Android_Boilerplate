@@ -9,7 +9,10 @@ import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.realm.OrderedRealmCollection;
 
-
+/**
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
+ */
 public class DataRepositoryImpl implements DataRepository {
 
     private RealmManager realmManager;

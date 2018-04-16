@@ -7,6 +7,9 @@ import com.theappsolutions.boilerplate.ui.settings.SettingsFragment;
 import dagger.Subcomponent;
 
 /**
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
+ * <p>
  * This component inject dependencies to all Fragments across the application
  */
 @PerFragment

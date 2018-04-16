@@ -26,6 +26,10 @@ import butterknife.OnClick;
 import butterknife.OnEditorAction;
 import butterknife.OnTextChanged;
 
+/**
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
+ */
 public class AuthActivity extends PermissionsCheckActivity implements AuthView {
 
     @BindView(R.id.et_login)

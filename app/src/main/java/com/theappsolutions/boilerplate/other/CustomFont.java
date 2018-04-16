@@ -6,6 +6,12 @@ import android.graphics.Typeface;
 import com.annimon.stream.Optional;
 import com.annimon.stream.Stream;
 
+/**
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
+ *
+ * Provides interface for font files
+ */
 public enum CustomFont {
     CLANT_OT_NARR_BOLD(0, "fonts/ClanOT_NarrBold.otf"),
     CLANT_OT_NARR_BOOK(1, "fonts/ClanOT_NarrBook.otf"),

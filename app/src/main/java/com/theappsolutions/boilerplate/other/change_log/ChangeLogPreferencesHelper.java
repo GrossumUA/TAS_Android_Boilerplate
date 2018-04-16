@@ -6,6 +6,8 @@ import android.content.SharedPreferences;
 /**
  * @author Dmytro Yakovlev d.yakovlev@theappsolutions.com
  * @copyright (c) 2017 TheAppSolutions. (https://theappsolutions.com)
+ * <p>
+ * Separate Shared Preferences access for {@link ChangeLogManager}
  */
 public class ChangeLogPreferencesHelper {
 

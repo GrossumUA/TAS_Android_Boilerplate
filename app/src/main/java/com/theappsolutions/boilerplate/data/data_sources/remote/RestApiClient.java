@@ -12,10 +12,9 @@ import javax.inject.Singleton;
 
 import io.reactivex.Observable;
 
-
 /**
- * @author Dmytro Yakovlev d.yakovlev@theappsolutions.com
- * @copyright (c) 2017 TheAppSolutions. (https://theappsolutions.com)
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
  */
 @Singleton
 public class RestApiClient {

@@ -13,7 +13,12 @@ import io.reactivex.functions.Function;
 import static io.reactivex.Observable.empty;
 import static io.reactivex.Observable.just;
 
-
+/**
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
+ *
+ * Provides sets of methods that help to manipulate with Optional
+ */
 public class OptUtils {
 
     public static <T> Consumer<T> silentConsumer() {

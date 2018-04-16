@@ -8,6 +8,12 @@ import com.theappsolutions.boilerplate.TasBoilerplateApplication;
 
 import io.reactivex.functions.Consumer;
 
+/**
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
+ *
+ * Wrap all error logging services
+ */
 public class ErrorLogger {
 
     private static final String TAG = "nioxin";

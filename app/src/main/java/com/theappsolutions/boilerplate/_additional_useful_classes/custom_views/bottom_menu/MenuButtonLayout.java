@@ -16,9 +16,9 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * Created by Dmytro Yakovlev.
+ * @author Dmytro Yakovlev d.yakovlev@theappsolutions.com
+ * @copyright (c) 2017 TheAppSolutions. (https://theappsolutions.com)
  */
-
 @SuppressLint("ViewConstructor")
 public class MenuButtonLayout extends LinearLayout {
 

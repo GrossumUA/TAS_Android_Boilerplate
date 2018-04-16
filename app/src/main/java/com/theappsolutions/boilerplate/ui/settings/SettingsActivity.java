@@ -16,6 +16,10 @@ import javax.inject.Inject;
 
 import butterknife.BindView;
 
+/**
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
+ */
 public class SettingsActivity extends BaseMvpActivity implements SettingsView, SettingsFragment.SettingsCallback {
 
     @BindView(R.id.cnt_main)

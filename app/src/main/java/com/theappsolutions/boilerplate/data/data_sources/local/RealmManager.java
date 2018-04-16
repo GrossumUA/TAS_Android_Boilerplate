@@ -13,6 +13,9 @@ import io.realm.Realm;
 import io.realm.RealmConfiguration;
 
 /**
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
+ * <p>
  * Common helper class for Realm DB common actions with data
  */
 public class RealmManager {

@@ -6,6 +6,10 @@ import android.util.AttributeSet;
 
 import com.theappsolutions.boilerplate.custom_views.CustomFontTextView;
 
+/**
+ * @author Dmytro Yakovlev d.yakovlev@theappsolutions.com
+ * @copyright (c) 2017 TheAppSolutions. (https://theappsolutions.com)
+ */
 public class CustomFontCheckBox extends AppCompatCheckBox {
 
     public CustomFontCheckBox(Context context) {

@@ -9,6 +9,10 @@ import com.theappsolutions.boilerplate.ui.base.BasePresenter;
 
 import javax.inject.Inject;
 
+/**
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
+ */
 @ConfigPersistent
 public class SettingsPresenter extends BasePresenter<SettingsView> {
 

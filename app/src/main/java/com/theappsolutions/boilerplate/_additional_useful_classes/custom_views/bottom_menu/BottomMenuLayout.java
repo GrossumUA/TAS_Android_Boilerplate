@@ -13,9 +13,9 @@ import com.theappsolutions.boilerplate.R;
 import com.theappsolutions.boilerplate._additional_useful_classes.ui.menu.MenuStates;
 import com.theappsolutions.boilerplate.util.ui_utils.ViewUtils;
 
-
 /**
- * Created by Dmytro Yakovlev.
+ * @author Dmytro Yakovlev d.yakovlev@theappsolutions.com
+ * @copyright (c) 2017 TheAppSolutions. (https://theappsolutions.com)
  */
 public class BottomMenuLayout extends LinearLayout
         implements View.OnClickListener {

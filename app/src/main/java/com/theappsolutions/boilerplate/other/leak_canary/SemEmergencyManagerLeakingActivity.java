@@ -1,10 +1,5 @@
 package com.theappsolutions.boilerplate.other.leak_canary;
 
-/**
- * @author Dmytro Yakovlev d.yakovlev@theappsolutions.com
- * @copyright (c) 2017 TheAppSolutions. (https://theappsolutions.com)
- */
-
 import android.app.Activity;
 import android.app.Application;
 import android.os.Bundle;
@@ -17,6 +12,8 @@ import static android.os.Build.VERSION_CODES.KITKAT;
 import static android.os.Build.VERSION_CODES.O_MR1;
 
 /**
+ * @author Dmytro Yakovlev d.yakovlev@theappsolutions.com
+ * @copyright (c) 2017 TheAppSolutions. (https://theappsolutions.com)
  * Fixes a leak caused by SemEmergencyManager. Tracked at https://github.com/square/leakcanary/issues/762
  */
 public final class SemEmergencyManagerLeakingActivity implements Application.ActivityLifecycleCallbacks {
@@ -43,7 +40,7 @@ public final class SemEmergencyManagerLeakingActivity implements Application.Act
     }
 
     private void swapActivityWithApplicationContext()
-        throws ClassNotFoundException, NoSuchFieldException, IllegalAccessException {
+            throws ClassNotFoundException, NoSuchFieldException, IllegalAccessException {
         Class<?> semEmergencyManagerClass = Class.forName("com.samsung.android.emergencymode.SemEmergencyManager");
         Field sInstanceField = semEmergencyManagerClass.getDeclaredField("sInstance");
         sInstanceField.setAccessible(true);

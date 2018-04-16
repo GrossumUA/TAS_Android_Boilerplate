@@ -15,7 +15,12 @@ import java.util.Set;
 import okhttp3.Request;
 import okhttp3.Response;
 
-
+/**
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
+ *
+ * Manages mocking of OKHTTP responses with {@link MockingInterceptor}
+ */
 public class RequestsHandler {
 
     private final Map<String, String> mResponsesMap = new HashMap<>();

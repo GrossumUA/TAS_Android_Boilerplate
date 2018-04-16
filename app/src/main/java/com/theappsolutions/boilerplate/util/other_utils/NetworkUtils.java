@@ -18,7 +18,11 @@ import java.util.List;
 
 import retrofit2.HttpException;
 
-public class NetworkUtil {
+/**
+ * @author Dmytro Yakovlev d.yakovlev@theappsolutions.com
+ * @copyright (c) 2017 TheAppSolutions. (https://theappsolutions.com)
+ */
+public class NetworkUtils {
 
     /**
      * Returns true if the Throwable is an instance of RetrofitError with an

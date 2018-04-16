@@ -18,6 +18,10 @@ import javax.inject.Inject;
 import butterknife.BindView;
 import io.realm.OrderedRealmCollection;
 
+/**
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
+ */
 public class ProjectListActivity extends BaseMvpActivity implements ProjectListView {
 
     @BindView(R.id.rv_list)

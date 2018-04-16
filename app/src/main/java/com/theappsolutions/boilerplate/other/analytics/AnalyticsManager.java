@@ -11,6 +11,12 @@ import com.google.firebase.analytics.FirebaseAnalytics;
 import static com.annimon.stream.Optional.empty;
 import static com.annimon.stream.Optional.of;
 
+/**
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
+ *
+ * Wrap all analytics services and provides single assess to them
+ */
 public class AnalyticsManager {
 
     private Optional<FabricAnswersManager> fabricManager = empty();

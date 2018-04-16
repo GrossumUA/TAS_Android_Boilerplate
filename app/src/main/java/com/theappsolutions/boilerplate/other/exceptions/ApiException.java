@@ -1,8 +1,8 @@
 package com.theappsolutions.boilerplate.other.exceptions;
 
 /**
- * @author Severyn Parkhomenko <sparkhomenko@grossum.com>
- * @copyright (c) Grossum. (http://www.grossum.com)
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
  */
 public class ApiException extends UserReadableException {
 

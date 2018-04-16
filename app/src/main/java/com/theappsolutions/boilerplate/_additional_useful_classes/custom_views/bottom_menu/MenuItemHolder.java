@@ -1,9 +1,9 @@
 package com.theappsolutions.boilerplate._additional_useful_classes.custom_views.bottom_menu;
 
 /**
- * Created by Dmytro Yakovlev.
+ * @author Dmytro Yakovlev d.yakovlev@theappsolutions.com
+ * @copyright (c) 2017 TheAppSolutions. (https://theappsolutions.com)
  */
-
 public class MenuItemHolder {
 
     private int iconResId;

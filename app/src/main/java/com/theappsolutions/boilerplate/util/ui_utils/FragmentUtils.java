@@ -7,12 +7,10 @@ import android.support.v4.app.FragmentTransaction;
 
 import org.javatuples.Quartet;
 
-
 /**
  * @author Dmytro Yakovlev d.yakovlev@theappsolutions.com
  * @copyright (c) 2017 TheAppSolutions. (https://theappsolutions.com)
  */
-
 public class FragmentUtils {
 
     public static boolean isBackStackEmpty(FragmentActivity fragmentAct) {

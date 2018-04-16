@@ -11,6 +11,10 @@ import android.widget.TextView;
 import com.theappsolutions.boilerplate.R;
 import com.theappsolutions.boilerplate.other.CustomFont;
 
+/**
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
+ */
 public class CustomFontTextView extends AppCompatTextView {
 
     public CustomFontTextView(Context context) {

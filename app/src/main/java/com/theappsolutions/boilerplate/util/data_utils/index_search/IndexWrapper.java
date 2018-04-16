@@ -3,6 +3,8 @@ package com.theappsolutions.boilerplate.util.data_utils.index_search;
 /**
  * @author Dmytro Yakovlev d.yakovlev@theappsolutions.com
  * @copyright (c) 2017 TheAppSolutions. (https://theappsolutions.com)
+ * <p>
+ * POJO class for {@link OccurrencesIndexFinder}
  */
 public class IndexWrapper {
 

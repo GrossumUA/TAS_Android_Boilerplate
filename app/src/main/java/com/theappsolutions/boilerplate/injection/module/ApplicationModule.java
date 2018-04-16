@@ -36,6 +36,9 @@ import io.realm.Realm;
 import retrofit2.Retrofit;
 
 /**
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
+ * <p>
  * Provide application-level dependencies.
  */
 @Module
@@ -149,11 +152,11 @@ public class ApplicationModule {
         Resources res = context.getResources();
         return new ValidationUtils.Builder(res.getString(R.string.error_empty_field))
                 .setPasswordValidation(new ValidationUtils.Builder.PasswordValidation(
-                        ValidationUtils.ValidationPair.withDynamicResource(TasBoilerplateSettings.MIN_PASSWORD_LENGTH,
+                        ValidationUtils.ValidationRule.withDynamicResource(TasBoilerplateSettings.MIN_PASSWORD_LENGTH,
                                 res.getString(R.string.error_short_pass)),
-                        new ValidationUtils.ValidationPair<>(TasBoilerplateSettings.PASSWORD_SHOULD_HAVE_NUMBERS_AND_LETTERS,
+                        new ValidationUtils.ValidationRule<>(TasBoilerplateSettings.PASSWORD_SHOULD_HAVE_NUMBERS_AND_LETTERS,
                                 res.getString(R.string.error_pass_should_contains_letter_and_digits)),
-                        new ValidationUtils.ValidationPair<>(TasBoilerplateSettings.PASSWORD_SHOULD_HAVE_UPPERCASE_LETTERS,
+                        new ValidationUtils.ValidationRule<>(TasBoilerplateSettings.PASSWORD_SHOULD_HAVE_UPPERCASE_LETTERS,
                                 res.getString(R.string.error_pass_should_contains_uppercase))))
                 .setEmailValidation(
                         new ValidationUtils.Builder.EmailValidation(res.getString(R.string.error_email_did_not_matches)))

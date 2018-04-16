@@ -28,6 +28,12 @@ import com.theappsolutions.boilerplate.util.data_utils.index_search.OccurrencesI
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
+/**
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
+ *
+ * Set of static methods with common view operations and calculations
+ */
 public final class ViewUtils {
 
     private static final AtomicInteger sNextGeneratedId = new AtomicInteger(1);

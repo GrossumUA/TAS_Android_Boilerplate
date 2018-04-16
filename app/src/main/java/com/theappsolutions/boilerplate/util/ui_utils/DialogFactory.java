@@ -8,7 +8,12 @@ import android.support.v7.app.AlertDialog;
 
 import com.theappsolutions.boilerplate.R;
 
-
+/**
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
+ *
+ * Provides simple access to base Android workflow dialogs
+ */
 public final class DialogFactory {
 
     public static Dialog createSimpleOkErrorDialog(Context context, String title, String message) {

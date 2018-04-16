@@ -12,7 +12,12 @@ import okhttp3.Response;
 import okhttp3.ResponseBody;
 import okio.Buffer;
 
-
+/**
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
+ *
+ * Provides manual building of OKHTTP responses
+ */
 public final class OkHttpResponse {
 
     private static final byte[] EMPTY_BODY = new byte[0];

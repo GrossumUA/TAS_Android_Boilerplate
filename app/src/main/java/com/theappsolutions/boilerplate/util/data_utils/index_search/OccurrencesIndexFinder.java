@@ -8,6 +8,8 @@ import java.util.regex.Pattern;
 /**
  * @author Dmytro Yakovlev d.yakovlev@theappsolutions.com
  * @copyright (c) 2017 TheAppSolutions. (https://theappsolutions.com)
+ *
+ * Util for finding start/end indexes of phrase in text
  */
 public class OccurrencesIndexFinder {
 

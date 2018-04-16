@@ -13,6 +13,8 @@ import timber.log.Timber;
 /**
  * @author Dmytro Yakovlev d.yakovlev@theappsolutions.com
  * @copyright (c) 2017 TheAppSolutions. (https://theappsolutions.com)
+ *
+ * Provide access to Google Advertising ID
  */
 public class GaidRetriever {
 

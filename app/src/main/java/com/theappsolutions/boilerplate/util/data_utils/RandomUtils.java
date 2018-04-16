@@ -15,7 +15,6 @@ import java.util.Set;
  * @author Dmytro Yakovlev d.yakovlev@theappsolutions.com
  * @copyright (c) 2017 TheAppSolutions. (https://theappsolutions.com)
  */
-
 public class RandomUtils {
 
     private static final String upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";

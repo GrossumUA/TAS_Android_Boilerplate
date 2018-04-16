@@ -8,6 +8,9 @@ import io.reactivex.Flowable;
 import io.reactivex.subjects.PublishSubject;
 
 /**
+ * @author Dmytro Yakovlev d.yakovlev@theappsolutions.com
+ * @copyright (c) 2017 TheAppSolutions. (https://theappsolutions.com)
+ *
  * A simple event bus built with RxJava
  */
 @Singleton

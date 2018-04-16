@@ -11,6 +11,9 @@ import com.theappsolutions.boilerplate.ui.splash.SplashActivity;
 import dagger.Subcomponent;
 
 /**
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
+ *
  * This component inject dependencies to all Activities across the application
  */
 @PerActivity

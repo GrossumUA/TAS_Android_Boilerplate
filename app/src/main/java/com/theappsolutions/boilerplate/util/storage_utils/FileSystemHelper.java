@@ -32,6 +32,8 @@ import timber.log.Timber;
 /**
  * @author Dmytro Yakovlev d.yakovlev@theappsolutions.com
  * @copyright (c) 2017 TheAppSolutions. (https://theappsolutions.com)
+ *
+ * Utils for working with files
  */
 public class FileSystemHelper {
 

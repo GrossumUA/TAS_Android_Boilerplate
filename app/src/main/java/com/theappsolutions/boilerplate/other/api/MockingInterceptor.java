@@ -11,6 +11,12 @@ import okhttp3.Interceptor;
 import okhttp3.Request;
 import okhttp3.Response;
 
+/**
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
+ *
+ * Special class for mocking REST API via OKHTTP interceptors
+ */
 public class MockingInterceptor implements Interceptor {
 
     private final RequestsHandler requestsHandler;

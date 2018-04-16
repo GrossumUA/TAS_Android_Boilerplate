@@ -11,6 +11,10 @@ import com.theappsolutions.boilerplate.util.data_utils.RandomUtils;
 import io.reactivex.Observable;
 import io.realm.OrderedRealmCollection;
 
+/**
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
+ */
 public class DataManager {
 
     private final RestApiClient restApiClient;

@@ -5,6 +5,12 @@ import java.util.List;
 import io.realm.Realm;
 import io.realm.RealmModel;
 
+/**
+ * @author Dmytro Yakovlev d.yakovlev@theappsolutions.com
+ * @copyright (c) 2017 TheAppSolutions. (https://theappsolutions.com)
+ *
+ * Base Realm operations wrapper
+ */
 public class RealmUtils {
 
     public static <E extends RealmModel> E copyFromRealm(E obj, Realm realm) {

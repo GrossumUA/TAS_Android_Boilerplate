@@ -10,6 +10,13 @@ import java.util.List;
 
 import javax.annotation.Nonnull;
 
+/**
+ * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
+ * @copyright (c) 2018 TheAppSolutions. (https://theappsolutions.com)
+ *
+ * Util that provides validation of different fields.
+ * Can be used as instance with predefined rules and messages.
+ */
 public class ValidationUtils {
 
     private Builder builder;
@@ -25,18 +32,18 @@ public class ValidationUtils {
         if (builder.passwordValidation == null) {
             return ValidationResult.valid();
         } else {
-            ValidationPair<Integer> minLength = builder.passwordValidation.minLength;
+            ValidationRule<Integer> minLength = builder.passwordValidation.minLength;
             if (minLength != null && password.length() < minLength.param) {
                 return ValidationResult.notValid(minLength.message);
             }
-            ValidationPair<Boolean> mustHaveNumbersAndLetters = builder.passwordValidation.mustHaveNumbersAndLetters;
+            ValidationRule<Boolean> mustHaveNumbersAndLetters = builder.passwordValidation.mustHaveNumbersAndLetters;
             if (mustHaveNumbersAndLetters != null &&
                     mustHaveNumbersAndLetters.param &&
                     (!StringUtils.hasLetters(password) || !StringUtils.hasNumbers(password))) {
                 return ValidationResult.notValid(mustHaveNumbersAndLetters.message);
             }
 
-            ValidationPair<Boolean> mustHaveUppercase = builder.passwordValidation.mustHaveUppercase;
+            ValidationRule<Boolean> mustHaveUppercase = builder.passwordValidation.mustHaveUppercase;
             if (mustHaveUppercase != null &&
                     mustHaveUppercase.param &&
                     !StringUtils.hasUppercase(password)) {
@@ -86,17 +93,17 @@ public class ValidationUtils {
         }
 
         public static class PasswordValidation {
-            private ValidationPair<Integer> minLength;
-            private ValidationPair<Boolean> mustHaveNumbersAndLetters;
-            private ValidationPair<Boolean> mustHaveUppercase;
+            private ValidationRule<Integer> minLength;
+            private ValidationRule<Boolean> mustHaveNumbersAndLetters;
+            private ValidationRule<Boolean> mustHaveUppercase;
 
-            public PasswordValidation(ValidationPair<Integer> minLength) {
+            public PasswordValidation(ValidationRule<Integer> minLength) {
                 this.minLength = minLength;
             }
 
-            public PasswordValidation(ValidationPair<Integer> minLength,
-                                      ValidationPair<Boolean> mustHaveNumbersAndLetters,
-                                      ValidationPair<Boolean> mustHaveUppercase) {
+            public PasswordValidation(ValidationRule<Integer> minLength,
+                                      ValidationRule<Boolean> mustHaveNumbersAndLetters,
+                                      ValidationRule<Boolean> mustHaveUppercase) {
                 this.minLength = minLength;
                 this.mustHaveNumbersAndLetters = mustHaveNumbersAndLetters;
                 this.mustHaveUppercase = mustHaveUppercase;
@@ -112,17 +119,17 @@ public class ValidationUtils {
         }
     }
 
-    public static class ValidationPair<T extends Object> {
+    public static class ValidationRule<T extends Object> {
         private T param;
         private String message;
 
-        public ValidationPair(T param, String message) {
+        public ValidationRule(T param, String message) {
             this.param = param;
             this.message = message;
         }
 
-        public static <T> ValidationPair<T> withDynamicResource(T param, String message) {
-            return new ValidationPair<>(param, String.format(message, param));
+        public static <T> ValidationRule<T> withDynamicResource(T param, String message) {
+            return new ValidationRule<>(param, String.format(message, param));
         }
     }
 
