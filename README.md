@@ -151,12 +151,18 @@ To quickly start a new project from this boilerplate follow the next steps:
   * In `src/main/AndroidManifest.xml`.
 * Create a new git repository, [see GitHub tutorial](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/).
 * Replace the example code with your app code following the same architecture.
+* Remove unused classes from `/_additional_useful_classes` and `/util` folders
 * In `app/build.gradle` add the signing config to enable release versions.
 * Add Fabric API key and secret to fabric.properties and uncomment Fabric plugin set up in `app/build.gradle`
 * Add `google-services.json` for using Firebase services, [see tutorial](https://developers.google.com/android/guides/google-services-plugin).
 * Update `proguard-rules.pro` to keep models and add extra rules to file if needed.
 * Update README with information relevant to the new project.
 * Update LICENSE to match the requirements of the new project.
+
+## Credentials
+This repository is being developed by The App Solutions Android team: [Severyn Parkhomenko](https://developers.google.com/android/guides/google-services-plugin), [Dmytro Yakovlev](https://github.com/DmitriyYakovlev) and [Viktor Vaidner](https://github.com/7space7).
+
+A lot of solutions was inspired by [Ribot Android Boilerplate](https://github.com/ribot/android-boilerplate), [Google Android Blueprints](https://github.com/googlesamples/android-architecture), [android10 Clean Architecture](https://github.com/android10/Android-CleanArchitecture) and others.
 
 ## License
 
