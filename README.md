@@ -3,7 +3,8 @@
   <img src="/resources/img_tas_logo.png?raw=true">
 </p>
 
-Sample Android app that [The App Solutions](https://theappsolutions.com/) company developers used as a reference for new Android projects. It shows the architecture and guidelines of most company's projects and provides base utils that can be used for many common tasks.
+This is one of the boilerplates that [The App Solutions](https://theappsolutions.com/) company developers are using as a foundation for new Android projects. 
+It is result of years of experiments and refinement of the architecture and guidelines on various company's projects. This particular boilerplate provides basic set utilities for resolving common tasks.
 
 ## Tech stack
 
@@ -47,49 +48,52 @@ This project follows TAS's Android architecture guidelines that are based on [MV
 
 ## Utils
 
-This project contains wide list of different utils that help to solve a lot of common task.
+For this particular boilerplate we’ve prepared a set of utilities for performing common tasks.
 
 ### Data
 
-- **ValidationUtils** - util that provides validation of different fields. Can be used as instance with predefined rules and messages.
+- **ValidationUtils** - utility for validation of different input fields with predefined rules and messages.
 - **TimeConvertingUtils**
 - **StringUtils** 
 - **RoundingHelper** 
 - **RandomUtils** 
-- **CountryCodeUtils** - utils for country codes processing 
-- **OccurrencesIndexFinder** - util for finding start/end indexes of phrase in text
+- **CountryCodeUtils** -  country code processing utility
+- **OccurrencesIndexFinder** - utility for start/end index search of phrases in the text
 
 ### Storage
 
-- **FileSystemHelper** - utils for working with files
-- **RealmImporter** - manger that provides importing Realm database from json
-- **RealmUtils** - base Realm operations wrapper
+- **FileSystemHelper** - utility for File System operation
+- **RealmImporter** - Import manager for json Realm database
+- **RealmUtils** - operation wrapper for base Realm 
 
 ### UI
 
-- **DialogFactory** - provides simple access to base Android workflow dialogs
+- **DialogFactory** - utility for streamlines access to base Android workflow dialogs
 - **FragmentUtils**
 - **ToastUtils**
-- **ViewUtils** - Set of static methods with common view operations and calculations
+- **ViewUtils** - set of static methods with common view operations and calculations
 
 ### Other
 
 - **StreamsUtils**
 - **RxUtils**
-- **OptUtils** - provides sets of methods that help to manipulate with Optional
+- **OptUtils** - sets of utilities for manipulations with Optional
 - **NetworkUtils**
 - **LogUtils**
 - **IntentUtils**
 - **HardwareUtils**
 - **BuildInfoUtils**
-- **ApiUtils** - set of methods that wrap main transformations and checking while working with REST API
-- **GaidRetriever** - provide access to Google Advertising ID
-- **PermissionsCheckActivity** - base activity for screens with permission checking
+- **ApiUtils** - set of methods for main transformations wrap and check while working with REST API
+- **GaidRetriever** - enables access to Google Advertising ID
+- **PermissionsCheckActivity** - utility for on-screen base activity with permission checking
 - **PermissionsUtils**
 
 ## Code Quality
 
-This project integrates a combination of unit tests, functional test and code analysis tools.
+For this boilerplate we’ve prepared a combination of several code tests: 
+- unit tests;
+- functional test;
+- code analysis tools.
 
 ### Tests
 
@@ -107,21 +111,21 @@ To run **functional** tests on connected devices:
 
 ### Code Analysis tools
 
-The following code analysis tools are set up on this project:
+The following code analysis tools are prepared for this project:
 
-* [PMD](https://pmd.github.io/): It finds common programming flaws like unused variables, empty catch blocks, unnecessary object creation, and so forth. See [this project's PMD ruleset](config/quality/pmd/pmd-ruleset.xml).
-
+* [PMD](https://pmd.github.io/):designed for “search and destroy” of common programming flaws. It eliminates with extreme prejudice things like unused variables, empty catch blocks, unnecessary object creation, etc. See this project's [PMD ruleset](config/quality/pmd/pmd-ruleset.xml).
+ 
 ```
 ./gradlew pmd
 ```
 
-* [Findbugs](http://findbugs.sourceforge.net/): This tool uses static analysis to find bugs in Java code. Unlike PMD, it uses compiled Java bytecode instead of source code.
+* [Findbugs](http://findbugs.sourceforge.net/):  designed for bug finding in Java code. Unlike PMD, instead of source code it uses compiled version of Java bytecode.
 
 ```
 ./gradlew findbugs
 ```
 
-* [Checkstyle](http://checkstyle.sourceforge.net/): It ensures that the code style follows [our Android code guidelines](https://github.com/ribot/android-guidelines/blob/master/project_and_code_guidelines.md#2-code-guidelines). See our [checkstyle config file](config/quality/checkstyle/checkstyle-config.xml).
+* [Checkstyle](http://checkstyle.sourceforge.net/): designed to keep unified style over the entirety of the application’s code according to preset guidelines.
 
 ```
 ./gradlew checkstyle
@@ -135,24 +139,23 @@ To ensure that your code is valid and stable use check:
 ./gradlew check
 ```
 
-This will run all the code analysis tools and unit tests in the following order:
+This will run code analysis tools and unit tests in the following order:
 
 ![Check Diagram](resources/check-task-diagram.png)
 
 ## New project setup
 
-To quickly start a new project from this boilerplate follow the next steps:
+Here is a step by step by on how to start a new project from this boilerplate:
 
-
-* Download this repository.
-* Change the package name. 
+* Download this boilerplate repository.
+* Change the name of the package.
   * Rename packages in main, androidTest and test using Android Studio.
   * In `app/build.gradle` file, `packageName` and `testInstrumentationRunner`.
   * In `src/main/AndroidManifest.xml`.
 * Create a new git repository, [see GitHub tutorial](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/).
-* Replace the example code with your app code following the same architecture.
+* Replace the dummy code with the code of your app in accordance with the architecture.
 * Remove unused classes from `/_additional_useful_classes` and `/util` folders
-* In `app/build.gradle` add the signing config to enable release versions.
+* In `app/build.gradle` add the signing configuration to enable release versions.
 * Add Fabric API key and secret to fabric.properties and uncomment Fabric plugin set up in `app/build.gradle`
 * Add `google-services.json` for using Firebase services, [see tutorial](https://developers.google.com/android/guides/google-services-plugin).
 * Update `proguard-rules.pro` to keep models and add extra rules to file if needed.
@@ -162,7 +165,8 @@ To quickly start a new project from this boilerplate follow the next steps:
 ## Credentials
 This repository is being developed by The App Solutions Android team: [Severyn Parkhomenko](https://developers.google.com/android/guides/google-services-plugin), [Dmytro Yakovlev](https://github.com/DmitriyYakovlev) and [Viktor Vaidner](https://github.com/7space7).
 
-A lot of solutions was inspired by [Ribot Android Boilerplate](https://github.com/ribot/android-boilerplate), [Google Android Blueprints](https://github.com/googlesamples/android-architecture), [android10 Clean Architecture](https://github.com/android10/Android-CleanArchitecture) and others.
+A lot of solutions was inspired by [Ribot Android Boilerplate](https://github.com/ribot/android-boilerplate), [Google Android Blueprints](https://github.com/googlesamples/android-architecture), [android10 Clean Architecture](https://github.com/android10/Android-CleanArchitecture) and others. Certain elements were modified.
+
 
 ## License
 

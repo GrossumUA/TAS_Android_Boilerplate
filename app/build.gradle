@@ -95,16 +95,15 @@ android {
 }
 
 ext {
-    SUPPORT_LIBRARY_VERSION = '27.1.0'
-    FIREBASE_VERSION = '12.0.0'
+    SUPPORT_LIBRARY_VERSION = '27.1.1'
+    CONSTRAINT_LAYOUT_VERSION = '1.1.0'
+    FIREBASE_VERSION = '15.0.2'
     RETROFIT_VERSION = '2.3.0'
     DAGGER_VERSION = '2.5'
     MOCKITO_VERSION = '2.6.2'
     ESPRESSO_VERSION = '2.2.1'
     RUNNER_VERSION = '0.4'
     BUTTERKNIFE_VERSION = '8.8.1'
-    AUTO_VALUE_VERSION = '1.3'
-    AUTO_VALUE_GSON_VERSION = '0.4.2'
     STREAM_BACKPORT_VERSION = '1.1.7'
     LEAK_CANARY_VERSION = '1.5.4'
     STETHO_VERSION = '1.5.0'
@@ -112,18 +111,12 @@ ext {
     OK_HTTP_3_VERSION = '3.9.0'
     ROBOLECTRIC_VERSION = '3.5'
     TIMBER_VERSION = '4.6.0'
-    JAVAX_ANNOTATION_VERSION = '10.0-b28'
     GLIDE_VERSION = '4.4.0'
     RX_ANDROID_VERSION = '2.0.1'
     RX_JAVA_VERSION = '2.1.3'
     CRASHLYTICS_VERSION = '2.9.1'
     JUNIT_VERSION = '4.12'
-    AUTO_VALUE_PARCEL_VERSION = '0.2.4-rc2'
-    CONSTRAINT_LAYOUT_VERSION = '1.0.2'
-    DESIGN_LIBRARY_VERSION = '26.1.0'
-    RX_BINDING = '2.0.0'
     MULTI_DEX_VERSION = '1.0.3'
-    FIREBASE_JOB_DISPATCHER = '0.8.5'
     REALM_ADAPTERS = '2.1.1'
     CHANGE_LOG_LIBRARY = '2.1.0'
 }
@@ -141,6 +134,7 @@ dependencies {
     implementation "com.android.support:cardview-v7:$SUPPORT_LIBRARY_VERSION"
     implementation "com.android.support:support-annotations:$SUPPORT_LIBRARY_VERSION"
     implementation "com.android.support:preference-v7:$SUPPORT_LIBRARY_VERSION"
+    implementation "com.android.support.constraint:constraint-layout:$CONSTRAINT_LAYOUT_VERSION"
 
     implementation "com.squareup.retrofit2:retrofit:$RETROFIT_VERSION"
     implementation "com.squareup.retrofit2:converter-gson:$RETROFIT_VERSION"
@@ -160,15 +154,10 @@ dependencies {
     implementation "com.jakewharton:butterknife:$BUTTERKNIFE_VERSION"
     annotationProcessor "com.jakewharton:butterknife-compiler:$BUTTERKNIFE_VERSION"
 
-    implementation "com.google.dagger:dagger:$DAGGER_VERSION"
-    compileOnly "org.glassfish:javax.annotation:$JAVAX_ANNOTATION_VERSION" //Required by Dagger2
-
     def daggerCompiler = "com.google.dagger:dagger-compiler:$DAGGER_VERSION"
+    implementation "com.google.dagger:dagger:$DAGGER_VERSION"
     annotationProcessor daggerCompiler
-    testAnnotationProcessor daggerCompiler
-    androidTestAnnotationProcessor daggerCompiler
 
-    // leak canary
     debugImplementation "com.squareup.leakcanary:leakcanary-android:$LEAK_CANARY_VERSION"
     releaseImplementation "com.squareup.leakcanary:leakcanary-android-no-op:$LEAK_CANARY_VERSION"
 
@@ -182,18 +171,11 @@ dependencies {
     implementation "com.annimon:stream:$STREAM_BACKPORT_VERSION"
     implementation "org.javatuples:javatuples:$JAVA_TUPLES_VERSION"
 
-    implementation "com.android.support.constraint:constraint-layout:$CONSTRAINT_LAYOUT_VERSION"
-
-    implementation "com.android.support:design:$DESIGN_LIBRARY_VERSION"
-    implementation "com.jakewharton.rxbinding2:rxbinding:$RX_BINDING"
-
     implementation "io.realm:android-adapters:$REALM_ADAPTERS"
-
     implementation "com.github.gabrielemariotti.changeloglib:changelog:$CHANGE_LOG_LIBRARY"
 
 
-
-    // Instrumentation test dependencies
+    // Test dependencies
     def jUnit = "junit:junit:$JUNIT_VERSION"
     def mockito = "org.mockito:mockito-core:$MOCKITO_VERSION"
 
@@ -214,9 +196,11 @@ dependencies {
     testImplementation jUnit
     testImplementation mockito
     testImplementation "org.robolectric:robolectric:$ROBOLECTRIC_VERSION"
+
+    testAnnotationProcessor daggerCompiler
+    androidTestAnnotationProcessor daggerCompiler
 }
 apply plugin: 'com.google.gms.google-services'
-
 
 // Log out test results to console
 tasks.matching { it instanceof Test }.all {
