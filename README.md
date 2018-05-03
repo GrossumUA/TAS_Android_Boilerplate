@@ -22,7 +22,6 @@ It is result of years of experiments and refinement of the architecture and guid
 - [RxBinding](https://github.com/JakeWharton/RxBinding)
 - [Realm Adapter](https://github.com/realm/realm-android-adapters)
 - [JAVA Tuples](https://github.com/javatuples/javatuples)
-- [AutoValue](https://github.com/google/auto/tree/master/value) with extensions [AutoValueParcel](https://github.com/rharter/auto-value-parcel) and [AutoValueGson](https://github.com/rharter/auto-value-gson)
 - [ChangeLog View](https://github.com/gabrielemariotti/changeloglib)
 - Functional tests with [Espresso](https://google.github.io/android-testing-support-library/docs/espresso/index.html)
 - [Robolectric](http://robolectric.org/)
