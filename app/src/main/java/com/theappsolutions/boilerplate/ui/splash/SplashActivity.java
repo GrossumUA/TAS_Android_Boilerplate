@@ -2,13 +2,18 @@ package com.theappsolutions.boilerplate.ui.splash;
 
 import android.os.Bundle;
 
-import com.theappsolutions.boilerplate.custom_views.CustomToolbar;
+import com.theappsolutions.boilerplate.TasBoilerplateSettings;
+import com.theappsolutions.boilerplate.customviews.CustomToolbar;
 import com.theappsolutions.boilerplate.ui.auth.AuthActivity;
 import com.theappsolutions.boilerplate.ui.base.BaseMvpActivity;
 import com.theappsolutions.boilerplate.ui.base.BasePresenter;
 import com.theappsolutions.boilerplate.ui.projects.ProjectListActivity;
 
+import java.util.concurrent.TimeUnit;
+
 import javax.inject.Inject;
+
+import io.reactivex.Completable;
 
 /**
  * @author Severyn Parkhomenko s.parkhomenko@theappsolutions.com
@@ -24,12 +29,9 @@ public class SplashActivity extends BaseMvpActivity implements SplashView {
         super.onCreate(savedInstanceState);
         activityComponent().inject(this);
         splashPresenter.attachView(this);
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        splashPresenter.init();
+        Completable.complete()
+                .delay(TasBoilerplateSettings.SPLASH_SCREEN_DELAY_SEC, TimeUnit.SECONDS)
+                .doOnComplete(() -> splashPresenter.init()).subscribe();
     }
 
     @Override

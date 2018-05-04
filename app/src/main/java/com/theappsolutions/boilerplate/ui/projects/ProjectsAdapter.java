@@ -11,7 +11,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.theappsolutions.boilerplate.R;
 import com.theappsolutions.boilerplate.data.model.realm.CachedProject;
-import com.theappsolutions.boilerplate.util.storage_utils.FileSystemHelper;
+import com.theappsolutions.boilerplate.util.storage.FileSystemHelper;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

@@ -10,7 +10,7 @@ import com.theappsolutions.boilerplate.injection.ApplicationContext;
 import com.theappsolutions.boilerplate.injection.module.ApplicationModule;
 import com.theappsolutions.boilerplate.other.analytics.AnalyticsManager;
 import com.theappsolutions.boilerplate.other.analytics.ErrorLogger;
-import com.theappsolutions.boilerplate.util.data_utils.ValidationUtils;
+import com.theappsolutions.boilerplate.util.data.ValidationUtils;
 
 import javax.inject.Singleton;
 

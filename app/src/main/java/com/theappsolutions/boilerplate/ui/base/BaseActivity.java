@@ -17,14 +17,14 @@ import android.widget.Toast;
 import com.annimon.stream.Optional;
 import com.theappsolutions.boilerplate.R;
 import com.theappsolutions.boilerplate.TasBoilerplateApplication;
-import com.theappsolutions.boilerplate.custom_views.CustomToolbar;
+import com.theappsolutions.boilerplate.customviews.CustomToolbar;
 import com.theappsolutions.boilerplate.injection.component.ActivityComponent;
 import com.theappsolutions.boilerplate.injection.component.ConfigPersistentComponent;
 import com.theappsolutions.boilerplate.injection.component.DaggerConfigPersistentComponent;
 import com.theappsolutions.boilerplate.injection.module.ActivityModule;
 import com.theappsolutions.boilerplate.ui.settings.SettingsActivity;
-import com.theappsolutions.boilerplate.util.ui_utils.DialogFactory;
-import com.theappsolutions.boilerplate.util.ui_utils.ViewUtils;
+import com.theappsolutions.boilerplate.util.ui.DialogFactory;
+import com.theappsolutions.boilerplate.util.ui.ViewUtils;
 
 import java.util.concurrent.atomic.AtomicLong;
 

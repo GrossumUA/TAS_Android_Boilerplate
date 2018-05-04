@@ -8,7 +8,7 @@ import com.theappsolutions.boilerplate.injection.ConfigPersistent;
 import com.theappsolutions.boilerplate.other.analytics.AnalyticsEvent;
 import com.theappsolutions.boilerplate.other.analytics.AnalyticsManager;
 import com.theappsolutions.boilerplate.ui.base.BasePresenter;
-import com.theappsolutions.boilerplate.util.data_utils.ValidationUtils;
+import com.theappsolutions.boilerplate.util.data.ValidationUtils;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -5,10 +5,10 @@ import android.support.test.InstrumentationRegistry;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
-import com.theappsolutions.boilerplate.other.change_log.ChangeLogManager;
+import com.theappsolutions.boilerplate.other.changelog.ChangeLogManager;
 import com.theappsolutions.boilerplate.ui.auth.AuthActivity;
 import com.theappsolutions.boilerplate.util.TestUtils;
-import com.theappsolutions.boilerplate.util.other_utils.permissions_check.PermissionsCheckActivity;
+import com.theappsolutions.boilerplate.util.other.permissions_check.PermissionsCheckActivity;
 
 import org.junit.Rule;
 import org.junit.Test;

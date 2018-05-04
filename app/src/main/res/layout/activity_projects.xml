@@ -18,7 +18,7 @@
 
             <include layout="@layout/common_empty_view" />
 
-            <com.theappsolutions.boilerplate.custom_views.RecyclerViewWithEmptyMode
+            <com.theappsolutions.boilerplate.customviews.RecyclerViewWithEmptyMode
                 android:id="@+id/rv_list"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

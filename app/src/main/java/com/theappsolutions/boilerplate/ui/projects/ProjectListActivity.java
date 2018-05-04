@@ -6,8 +6,8 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.View;
 
 import com.theappsolutions.boilerplate.R;
-import com.theappsolutions.boilerplate.custom_views.CustomToolbar;
-import com.theappsolutions.boilerplate.custom_views.RecyclerViewWithEmptyMode;
+import com.theappsolutions.boilerplate.customviews.CustomToolbar;
+import com.theappsolutions.boilerplate.customviews.RecyclerViewWithEmptyMode;
 import com.theappsolutions.boilerplate.data.model.realm.CachedProject;
 import com.theappsolutions.boilerplate.ui.base.BaseActivity;
 import com.theappsolutions.boilerplate.ui.base.BaseMvpActivity;

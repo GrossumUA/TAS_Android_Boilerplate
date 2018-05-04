@@ -2,8 +2,8 @@ package com.theappsolutions.boilerplate;
 
 import com.theappsolutions.boilerplate.data.DataManager;
 import com.theappsolutions.boilerplate.data.PreferencesManager;
-import com.theappsolutions.boilerplate.data.data_sources.local.DataRepository;
-import com.theappsolutions.boilerplate.data.data_sources.remote.RestApiClient;
+import com.theappsolutions.boilerplate.data.datasources.local.DataRepository;
+import com.theappsolutions.boilerplate.data.datasources.remote.RestApiClient;
 import com.theappsolutions.boilerplate.data.model.api.LoginResponse;
 import com.theappsolutions.boilerplate.data.model.api.ProjectsResponse;
 import com.theappsolutions.boilerplate.mock.LoginResponseMock;

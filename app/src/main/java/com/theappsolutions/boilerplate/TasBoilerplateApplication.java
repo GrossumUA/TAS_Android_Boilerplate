@@ -14,7 +14,7 @@ import com.squareup.leakcanary.LeakCanary;
 import com.theappsolutions.boilerplate.injection.component.ApplicationComponent;
 import com.theappsolutions.boilerplate.injection.component.DaggerApplicationComponent;
 import com.theappsolutions.boilerplate.injection.module.ApplicationModule;
-import com.theappsolutions.boilerplate.other.leak_canary.SemEmergencyManagerLeakingActivity;
+import com.theappsolutions.boilerplate.other.leakcanary.SemEmergencyManagerLeakingActivity;
 
 import io.fabric.sdk.android.Fabric;
 import io.realm.Realm;

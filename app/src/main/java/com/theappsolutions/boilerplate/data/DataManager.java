@@ -2,11 +2,11 @@ package com.theappsolutions.boilerplate.data;
 
 import com.annimon.stream.Stream;
 import com.theappsolutions.boilerplate.TasBoilerplateSettings;
-import com.theappsolutions.boilerplate.data.data_sources.local.DataRepository;
+import com.theappsolutions.boilerplate.data.datasources.local.DataRepository;
 import com.theappsolutions.boilerplate.data.model.api.LoginResponse;
 import com.theappsolutions.boilerplate.data.model.realm.CachedProject;
-import com.theappsolutions.boilerplate.data.data_sources.remote.RestApiClient;
-import com.theappsolutions.boilerplate.util.data_utils.RandomUtils;
+import com.theappsolutions.boilerplate.data.datasources.remote.RestApiClient;
+import com.theappsolutions.boilerplate.util.data.RandomUtils;
 
 import io.reactivex.Observable;
 import io.realm.OrderedRealmCollection;

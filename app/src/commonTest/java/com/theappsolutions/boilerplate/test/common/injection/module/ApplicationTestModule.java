@@ -10,11 +10,11 @@ import com.theappsolutions.boilerplate.R;
 import com.theappsolutions.boilerplate.TasBoilerplateSettings;
 import com.theappsolutions.boilerplate.data.DataManager;
 import com.theappsolutions.boilerplate.data.PreferencesManager;
-import com.theappsolutions.boilerplate.data.data_sources.remote.RestService;
+import com.theappsolutions.boilerplate.data.datasources.remote.RestService;
 import com.theappsolutions.boilerplate.injection.ApplicationContext;
 import com.theappsolutions.boilerplate.other.analytics.AnalyticsManager;
 import com.theappsolutions.boilerplate.other.analytics.ErrorLogger;
-import com.theappsolutions.boilerplate.util.data_utils.ValidationUtils;
+import com.theappsolutions.boilerplate.util.data.ValidationUtils;
 
 import javax.inject.Singleton;
 

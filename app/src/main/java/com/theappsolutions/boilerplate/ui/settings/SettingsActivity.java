@@ -5,12 +5,12 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.theappsolutions.boilerplate.R;
-import com.theappsolutions.boilerplate.custom_views.CustomToolbar;
+import com.theappsolutions.boilerplate.customviews.CustomToolbar;
 import com.theappsolutions.boilerplate.ui.auth.AuthActivity;
 import com.theappsolutions.boilerplate.ui.base.BaseActivity;
 import com.theappsolutions.boilerplate.ui.base.BaseMvpActivity;
 import com.theappsolutions.boilerplate.ui.base.BasePresenter;
-import com.theappsolutions.boilerplate.util.ui_utils.FragmentUtils;
+import com.theappsolutions.boilerplate.util.ui.FragmentUtils;
 
 import javax.inject.Inject;
 

@@ -13,13 +13,13 @@
         android:elevation="@dimen/bt_menu_elevation"
         app:layout_constraintBottom_toBottomOf="parent">
 
-        <com.theappsolutions.boilerplate._additional_useful_classes.custom_views.bottom_menu.BottomMenuLayout
+        <com.theappsolutions.boilerplate.additionalusefulclasses.custom_views.bottom_menu.BottomMenuLayout
             android:id="@+id/bottom_menu"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_centerInParent="true">
 
-        </com.theappsolutions.boilerplate._additional_useful_classes.custom_views.bottom_menu.BottomMenuLayout>
+        </com.theappsolutions.boilerplate.additionalusefulclasses.custom_views.bottom_menu.BottomMenuLayout>
     </RelativeLayout>
 
 
@@ -33,7 +33,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <com.theappsolutions.boilerplate.custom_views.CustomToolbar xmlns:custom_toolbar="http://schemas.android.com/apk/res-auto"
+        <com.theappsolutions.boilerplate.customviews.CustomToolbar xmlns:custom_toolbar="http://schemas.android.com/apk/res-auto"
             style="@style/ToolbarStyle"
             custom_toolbar:withBackBtn="true" />
 

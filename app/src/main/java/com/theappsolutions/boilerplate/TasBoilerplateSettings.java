@@ -18,6 +18,7 @@ public class TasBoilerplateSettings {
     public static long REALM_LOCAL_DB_VERSION = 1;
     public static final String REALM_DB_NAME = "tas_boilerplate.realm";
 
+    public static final int SPLASH_SCREEN_DELAY_SEC = 2;
 
     public static final String[] NECESSARY_PERMISSIONS = {
             android.Manifest.permission.INTERNET,

@@ -10,7 +10,7 @@ import com.theappsolutions.boilerplate.other.analytics.AnalyticsManager;
 import com.theappsolutions.boilerplate.ui.auth.AuthPresenter;
 import com.theappsolutions.boilerplate.ui.auth.AuthView;
 import com.theappsolutions.boilerplate.util.RxSchedulersOverrideRule;
-import com.theappsolutions.boilerplate.util.data_utils.ValidationUtils;
+import com.theappsolutions.boilerplate.util.data.ValidationUtils;
 
 import org.junit.Before;
 import org.junit.Rule;

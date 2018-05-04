@@ -12,12 +12,12 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.theappsolutions.boilerplate.R;
-import com.theappsolutions.boilerplate._additional_useful_classes.ui.menu.BottomMenuActivity;
-import com.theappsolutions.boilerplate.custom_views.CustomToolbar;
-import com.theappsolutions.boilerplate.other.change_log.ChangeLogManager;
+import com.theappsolutions.boilerplate.additionalusefulclasses.ui.menu.BottomMenuActivity;
+import com.theappsolutions.boilerplate.customviews.CustomToolbar;
+import com.theappsolutions.boilerplate.other.changelog.ChangeLogManager;
 import com.theappsolutions.boilerplate.ui.base.BasePresenter;
 import com.theappsolutions.boilerplate.ui.projects.ProjectListActivity;
-import com.theappsolutions.boilerplate.util.other_utils.permissions_check.PermissionsCheckActivity;
+import com.theappsolutions.boilerplate.util.other.permissions_check.PermissionsCheckActivity;
 
 import javax.inject.Inject;
 

@@ -4,7 +4,7 @@ import android.content.Context;
 import android.support.annotation.NonNull;
 
 import com.theappsolutions.boilerplate.TasBoilerplateApplication;
-import com.theappsolutions.boilerplate.data.data_sources.remote.RetrofitBuilder;
+import com.theappsolutions.boilerplate.data.datasources.remote.RetrofitBuilder;
 
 import java.io.IOException;
 import java.io.InputStream;

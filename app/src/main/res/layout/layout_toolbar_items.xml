@@ -18,7 +18,7 @@
         android:padding="@dimen/common_padding_xsmall_2dp"
         android:src="@drawable/ic_arrow_left_grey"/>
 
-    <com.theappsolutions.boilerplate.custom_views.CustomFontTextView
+    <com.theappsolutions.boilerplate.customviews.CustomFontTextView
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
