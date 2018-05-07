@@ -162,7 +162,7 @@ Here is a step by step by on how to start a new project from this boilerplate:
 * Update LICENSE to match the requirements of the new project.
 
 ## Credentials
-This repository is being developed by The App Solutions Android team: [Severyn Parkhomenko](https://developers.google.com/android/guides/google-services-plugin), [Dmytro Yakovlev](https://github.com/DmitriyYakovlev) and [Viktor Vaidner](https://github.com/7space7).
+This repository is being developed by The App Solutions Android team: [Severyn Parkhomenko](https://github.com/Pseverin/), [Dmytro Yakovlev](https://github.com/DmitriyYakovlev) and [Viktor Vaidner](https://github.com/7space7).
 
 A lot of solutions was inspired by [Ribot Android Boilerplate](https://github.com/ribot/android-boilerplate), [Google Android Blueprints](https://github.com/googlesamples/android-architecture), [android10 Clean Architecture](https://github.com/android10/Android-CleanArchitecture) and others. Certain elements were modified.
 
