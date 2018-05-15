@@ -3,7 +3,9 @@ package com.theappsolutions.boilerplate.data.datasources.remote;
 import android.content.Context;
 import android.support.annotation.NonNull;
 
+import com.facebook.stetho.okhttp3.StethoInterceptor;
 import com.google.gson.Gson;
+import com.theappsolutions.boilerplate.BuildConfig;
 import com.theappsolutions.boilerplate.data.PreferencesManager;
 import com.theappsolutions.boilerplate.injection.ApplicationContext;
 import com.theappsolutions.boilerplate.other.api.MockingInterceptor;
@@ -56,6 +58,9 @@ public class RetrofitBuilder {
                     }
                     return chain.proceed(request.build());
                 });
+        if (BuildConfig.DEBUG) {
+            builder.addNetworkInterceptor(new StethoInterceptor());
+        }
 
         OkHttpClient httpClient = builder.build();
         return new Retrofit.Builder()

@@ -162,7 +162,7 @@ dependencies {
     releaseImplementation "com.squareup.leakcanary:leakcanary-android-no-op:$LEAK_CANARY_VERSION"
 
     implementation "com.facebook.stetho:stetho:$STETHO_VERSION"
-    implementation "com.facebook.stetho:stetho-okhttp:$STETHO_VERSION"
+    implementation "com.facebook.stetho:stetho-okhttp3:$STETHO_VERSION"
 
     implementation "com.squareup.okhttp3:okhttp:$OK_HTTP_3_VERSION"
     implementation "com.squareup.okhttp3:logging-interceptor:$OK_HTTP_3_VERSION"
