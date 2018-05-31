@@ -25,7 +25,7 @@ public class TestComponentRule implements TestRule {
 
     public TestComponentRule(Context context) {
         mContext = context;
-        TasBoilerplateApplication application = TasBoilerplateApplication.get(context);
+        TasBoilerplateApplication application = TasBoilerplateApplication.Companion.get(context);
         // TODO: apply correct building of dagger test component.
        /* mTestComponent = DaggerTestComponent.builder()
                 .applicationTestModule(new ApplicationTestModule(application))
@@ -45,7 +45,7 @@ public class TestComponentRule implements TestRule {
         return new Statement() {
             @Override
             public void evaluate() throws Throwable {
-                TasBoilerplateApplication application = TasBoilerplateApplication.get(mContext);
+                TasBoilerplateApplication application = TasBoilerplateApplication.Companion.get(mContext);
                 application.setComponent(mTestComponent);
                 base.evaluate();
                 application.setComponent(null);

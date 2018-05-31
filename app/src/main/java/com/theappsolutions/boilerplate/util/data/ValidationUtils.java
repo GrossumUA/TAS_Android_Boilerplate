@@ -1,5 +1,10 @@
 package com.theappsolutions.boilerplate.util.data;
 
+/**
+ * @author Viktor Vaidner v.vaidner@theappsolutions.com
+ * @copyright (c) 2017 TheAppSolutions. (https://theappsolutions.com)
+ * @project TAS_Android_Boilerplate
+ */
 import android.text.TextUtils;
 import android.util.Patterns;
 
@@ -39,14 +44,14 @@ public class ValidationUtils {
             ValidationRule<Boolean> mustHaveNumbersAndLetters = builder.passwordValidation.mustHaveNumbersAndLetters;
             if (mustHaveNumbersAndLetters != null &&
                     mustHaveNumbersAndLetters.param &&
-                    (!StringUtils.hasLetters(password) || !StringUtils.hasNumbers(password))) {
+                    (!StringUtils.INSTANCE.hasLetters(password) || !StringUtils.INSTANCE.hasNumbers(password))) {
                 return ValidationResult.notValid(mustHaveNumbersAndLetters.message);
             }
 
             ValidationRule<Boolean> mustHaveUppercase = builder.passwordValidation.mustHaveUppercase;
             if (mustHaveUppercase != null &&
                     mustHaveUppercase.param &&
-                    !StringUtils.hasUppercase(password)) {
+                    !StringUtils.INSTANCE.hasUppercase(password)) {
                 return ValidationResult.notValid(mustHaveUppercase.message);
             }
             return ValidationResult.valid();
@@ -177,3 +182,4 @@ public class ValidationUtils {
         }
     }
 }
+

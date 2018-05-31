@@ -49,16 +49,16 @@ public class AuthActivityTest {
             new ActivityTestRule<AuthActivity>(AuthActivity.class, true, true) {
                 @Override
                 protected Intent getActivityIntent() {
-                    Intent intent = AuthActivity.getStartIntent(
+                    Intent intent = AuthActivity.Companion.getStartIntent(
                             InstrumentationRegistry.getTargetContext());
-                    intent.putExtra(PermissionsCheckActivity.SUPPRESS_PERMISSIONS, true);
+                    intent.putExtra(PermissionsCheckActivity.Companion.getSUPPRESS_PERMISSIONS(), true);
                     return intent;
                 }
 
                 @Override
                 protected void beforeActivityLaunched() {
                     super.beforeActivityLaunched();
-                    ChangeLogManager.disable(InstrumentationRegistry.getTargetContext());
+                    ChangeLogManager.Companion.disable(InstrumentationRegistry.getTargetContext());
                 }
             };
 
@@ -105,7 +105,7 @@ public class AuthActivityTest {
         onView(withId(R.id.et_password)).perform(typeText(NOT_VALID_SHORT_PASS));
         onView(withId(R.id.btn_login)).perform(click());
         // Check if error appears
-        onView(withId(R.id.pass_input_lay)).check(matches(TestUtils.hasTextInputLayoutErrorText(getStringByRes(R.string.error_short_pass, TasBoilerplateSettings.MIN_PASSWORD_LENGTH))));
+        onView(withId(R.id.pass_input_lay)).check(matches(TestUtils.hasTextInputLayoutErrorText(getStringByRes(R.string.error_short_pass, TasBoilerplateSettings.INSTANCE.getMIN_PASSWORD_LENGTH()))));
 
         // Type wrong without digits pass
         onView(withId(R.id.et_password)).perform(clearText());

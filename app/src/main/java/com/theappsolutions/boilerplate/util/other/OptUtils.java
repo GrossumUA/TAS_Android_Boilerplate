@@ -22,7 +22,10 @@ import static io.reactivex.Observable.just;
 public class OptUtils {
 
     public static <T> Consumer<T> silentConsumer() {
-        return value -> {
+        return new Consumer<T>() {
+            @Override
+            public void accept(T value) throws Exception {
+            }
         };
     }
 
@@ -41,7 +44,12 @@ public class OptUtils {
     }
 
     public static <T> Predicate<T> not(Predicate<T> predicate) {
-        return param -> !predicate.test(param);
+        return new Predicate<T>() {
+            @Override
+            public boolean test(T param) {
+                return !predicate.test(param);
+            }
+        };
     }
 
     /**
@@ -100,9 +108,12 @@ public class OptUtils {
      * .doOnNext(value -> doOnNextFunction.call(value))
      */
     public static <T> Function<T, T> idMapper(Action1<T> onNext) {
-        return value -> {
-            onNext.call(value);
-            return value;
+        return new Function<T, T>() {
+            @Override
+            public T apply(T value) throws Exception {
+                onNext.call(value);
+                return value;
+            }
         };
     }
 

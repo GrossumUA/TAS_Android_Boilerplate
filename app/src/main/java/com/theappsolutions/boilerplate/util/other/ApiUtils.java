@@ -32,13 +32,13 @@ public class ApiUtils {
 
     public <ApiDataType> Observable<ApiDataType> doWithApiVersionAndLocale(Function2<String, String,
             Observable<ApiDataType>> obsProvider) {
-        return obsProvider.call(TasBoilerplateSettings.API_VERSION, Locale.getDefault().getCountry());
+        return obsProvider.call(TasBoilerplateSettings.INSTANCE.getAPI_VERSION(), Locale.getDefault().getCountry());
     }
 
     public <ApiDataType, Param1Type> Observable<ApiDataType> doWithApiVersionAndLocale(
             Function3<String, String, Param1Type, Observable<ApiDataType>> obsProvider,
             Param1Type param) {
-        return obsProvider.call(TasBoilerplateSettings.API_VERSION, Locale.getDefault().getCountry(), param);
+        return obsProvider.call(TasBoilerplateSettings.INSTANCE.getAPI_VERSION(), Locale.getDefault().getCountry(), param);
     }
 
     /**

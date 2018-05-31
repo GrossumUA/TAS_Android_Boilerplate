@@ -1,7 +1,11 @@
 apply plugin: 'com.android.application'
-apply plugin: 'realm-android'
 apply from: '../config/quality/quality.gradle'
 apply plugin: 'io.fabric'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'realm-android'
+
 
 android {
     compileSdkVersion 27
@@ -99,7 +103,7 @@ ext {
     CONSTRAINT_LAYOUT_VERSION = '1.1.0'
     FIREBASE_VERSION = '15.0.2'
     RETROFIT_VERSION = '2.3.0'
-    DAGGER_VERSION = '2.5'
+    DAGGER_VERSION = '2.15'
     MOCKITO_VERSION = '2.6.2'
     ESPRESSO_VERSION = '2.2.1'
     RUNNER_VERSION = '0.4'
@@ -122,6 +126,8 @@ ext {
 }
 
 dependencies {
+    //Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
     //common
     implementation "com.android.support:multidex:$MULTI_DEX_VERSION"
 
@@ -141,7 +147,7 @@ dependencies {
     implementation "com.squareup.retrofit2:adapter-rxjava2:$RETROFIT_VERSION"
 
     implementation("com.github.bumptech.glide:glide:$GLIDE_VERSION")
-    annotationProcessor "com.github.bumptech.glide:compiler:$GLIDE_VERSION"
+    kapt "com.github.bumptech.glide:compiler:$GLIDE_VERSION"
 
     implementation "io.reactivex.rxjava2:rxandroid:$RX_ANDROID_VERSION"
     implementation "io.reactivex.rxjava2:rxjava:$RX_JAVA_VERSION"
@@ -156,7 +162,7 @@ dependencies {
 
     def daggerCompiler = "com.google.dagger:dagger-compiler:$DAGGER_VERSION"
     implementation "com.google.dagger:dagger:$DAGGER_VERSION"
-    annotationProcessor daggerCompiler
+    kapt daggerCompiler
 
     debugImplementation "com.squareup.leakcanary:leakcanary-android:$LEAK_CANARY_VERSION"
     releaseImplementation "com.squareup.leakcanary:leakcanary-android-no-op:$LEAK_CANARY_VERSION"
