@@ -151,6 +151,7 @@ Here is a step by step by on how to start a new project from this boilerplate:
   * Rename packages in main, androidTest and test using Android Studio.
   * In `app/build.gradle` file, `packageName` and `testInstrumentationRunner`.
   * In `src/main/AndroidManifest.xml`.
+  * Make sure that custom views in existing layout files has changed package name
 * Create a new git repository, [see GitHub tutorial](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/).
 * Replace the dummy code with the code of your app in accordance with the architecture.
 * Remove unused classes from `/_additional_useful_classes` and `/util` folders
@@ -160,6 +161,9 @@ Here is a step by step by on how to start a new project from this boilerplate:
 * Update `proguard-rules.pro` to keep models and add extra rules to file if needed.
 * Update README with information relevant to the new project.
 * Update LICENSE to match the requirements of the new project.
+* Change app name in strings.xml
+* Change app icon
+* Rename Application class
 
 ## Credentials
 This repository is being developed by The App Solutions Android team: [Severyn Parkhomenko](https://github.com/Pseverin/), [Dmytro Yakovlev](https://github.com/DmitriyYakovlev) and [Viktor Vaidner](https://github.com/7space7).
