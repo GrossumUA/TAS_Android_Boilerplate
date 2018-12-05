@@ -164,6 +164,10 @@ Here is a step by step by on how to start a new project from this boilerplate:
 * Change app name in strings.xml
 * Change app icon
 * Rename Application class
+* Remove boilerplate project logos and mock responses from assets
+* Rename settings file
+* Edit proguard rules 
+
 
 ## Credentials
 This repository is being developed by The App Solutions Android team: [Severyn Parkhomenko](https://github.com/Pseverin/), [Dmytro Yakovlev](https://github.com/DmitriyYakovlev) and [Viktor Vaidner](https://github.com/7space7).
