@@ -53,7 +53,7 @@ public class BasePresenter<T extends BaseView> implements Presenter<T> {
     @Override
     public void detachView() {
         mMvpView = null;
-        disposables.dispose();
+        disposables.clear();
     }
 
     public Optional<T> getMvpView() {
