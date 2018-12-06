@@ -3,6 +3,11 @@ apply plugin: 'realm-android'
 apply from: '../config/quality/quality.gradle'
 apply plugin: 'io.fabric'
 
+def getTimestamp() {
+    def date = new Date()
+    return date.format('_dd-yyyy-MM_HH-mm')
+}
+
 android {
     compileSdkVersion 27
     buildToolsVersion '28.0.3'
@@ -25,7 +30,8 @@ android {
         multiDexEnabled true
 
         // for naming of .apk file
-        archivesBaseName = "TASBoilerplate_$versionName"
+        archivesBaseName = "TASBoilerplate___v$versionName" + "_vCode_$versionCode" + getTimestamp()
+
     }
 
     signingConfigs {
